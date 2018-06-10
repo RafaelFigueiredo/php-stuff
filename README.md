@@ -41,3 +41,21 @@ CREATE TABLE IF NOT EXISTS `requisicoes` (
 
 
 ### Uso
+```js
+function enviarJSON(){
+    var arr = { City: 'Moscow', Age: 25 };
+    $.ajax({
+        url: 'http://cariocaencoder.com/ordensdeservico/webservice.php',
+        type: 'POST',
+        data: JSON.stringify(arr),
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json',
+        async: false,
+        success: function(msg) {
+            alert(msg);
+        }
+    });
+
+    return false;
+  }
+  ```
