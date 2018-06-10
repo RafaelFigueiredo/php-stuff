@@ -41,6 +41,8 @@ CREATE TABLE IF NOT EXISTS `requisicoes` (
 
 
 ### Uso
+Aqui enviamos um arquivo bem simples, só para teste.
+
 ```js
 function enviarJSON(){
     var arr = { City: 'Moscow', Age: 25 };
